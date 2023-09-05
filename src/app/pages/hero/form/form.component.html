@@ -1,0 +1,55 @@
+<div class="container">
+  <h2>Formulario de Inscripción</h2>
+  <form (ngSubmit)="inscribirHeroe()" #heroForm="ngForm">
+    <div class="form-group">
+      <label for="nombreReal">Nombre Real:</label>
+      <input
+        type="text"
+        id="nombreReal"
+        name="nombreReal"
+        [(ngModel)]="heroe.nombreReal"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="nombreHeroe">Nombre de Super Héroe:</label>
+      <input
+        type="text"
+        id="nombreHeroe"
+        name="nombreHeroe"
+        [(ngModel)]="heroe.nombreHeroe"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="superpoderes">Superpoderes:</label>
+      <textarea
+        id="superpoderes"
+        name="superpoderes"
+        [(ngModel)]="heroe.superpoderes"
+        required
+      ></textarea>
+    </div>
+    <div class="form-group">
+      <label for="lugarNacimiento">Lugar de Nacimiento:</label>
+      <input
+        type="text"
+        id="lugarNacimiento"
+        name="lugarNacimiento"
+        [(ngModel)]="heroe.lugarNacimiento"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label for="imagenUrl">URL de la Imagen:</label>
+      <input
+        type="url"
+        id="imagenUrl"
+        name="imagenUrl"
+        [(ngModel)]="heroe.imagenUrl"
+        required
+      />
+    </div>
+    <button type="submit">Inscribir Héroe</button>
+  </form>
+</div>

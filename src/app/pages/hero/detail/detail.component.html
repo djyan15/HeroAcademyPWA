@@ -1,0 +1,13 @@
+<div class="container">
+  <h2>Detalle del Héroe</h2>
+  <div class="hero-card">
+    <img [src]="heroe.imagenUrl" alt="Imagen de {{ heroe.nombreHeroe }}" />
+    <div class="hero-details">
+      <h3>{{ heroe.nombreHeroe }}</h3>
+      <p><strong>Nombre Real:</strong> {{ heroe.nombreReal }}</p>
+      <p><strong>Superpoderes:</strong> {{ heroe.superpoderes }}</p>
+      <p><strong>Lugar de Nacimiento:</strong> {{ heroe.lugarNacimiento }}</p>
+    </div>
+  </div>
+  <button (click)="volverAlListado()">Volver al Listado</button>
+</div>
