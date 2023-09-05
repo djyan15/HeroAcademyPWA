@@ -14,7 +14,8 @@ export class FormComponent {
     lugarNacimiento: '',
     imagenUrl: ''
   };
-
+  pageTitle = 'Formulario de Inscripción';
+  backLink = '/list';
   constructor(private heroesService: HeroService) { }
 
   ngOnInit(): void {

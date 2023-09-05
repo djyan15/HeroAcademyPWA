@@ -1,5 +1,10 @@
+<app-navbar [pageTitle]="pageTitle" [backLink]="backLink"></app-navbar>
+<br />
+<div class="title" [routerLink]="backLink">
+  <a><i class="fas fa-chevron-left"></i></a>
+  <h1>{{ pageTitle }}</h1>
+</div>
 <div class="container">
-  <h2>Detalle del Héroe</h2>
   <div class="hero-card">
     <img [src]="heroe.imagenUrl" alt="Imagen de {{ heroe.nombreHeroe }}" />
     <div class="hero-details">
@@ -9,5 +14,4 @@
       <p><strong>Lugar de Nacimiento:</strong> {{ heroe.lugarNacimiento }}</p>
     </div>
   </div>
-  <button (click)="volverAlListado()">Volver al Listado</button>
 </div>

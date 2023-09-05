@@ -1,5 +1,10 @@
+<app-navbar [pageTitle]="pageTitle" [backLink]="backLink"></app-navbar>
+<br />
+<div class="title" [routerLink]="backLink">
+  <a><i class="fas fa-chevron-left"></i></a>
+  <h1>{{ pageTitle }}</h1>
+</div>
 <div class="container">
-  <h2>Formulario de Inscripción</h2>
   <form (ngSubmit)="inscribirHeroe()" #heroForm="ngForm">
     <div class="form-group">
       <label for="nombreReal">Nombre Real:</label>

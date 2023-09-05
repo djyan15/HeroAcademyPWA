@@ -37,3 +37,7 @@ button:hover {
   background-color: #007bff;
   color: #fff;
 }
+
+.btn-form {
+  margin-left: 10px;
+}

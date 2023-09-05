@@ -8,7 +8,8 @@ import { HeroService } from '../hero.service';
 })
 export class ListComponent {
   heroes: any[] = [];
-
+  pageTitle = 'Listado de Héroes';
+  backLink = '/';
   constructor(private heroesService: HeroService) { }
 
   ngOnInit(): void {

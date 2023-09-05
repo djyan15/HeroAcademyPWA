@@ -9,7 +9,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailComponent {
   heroe: any;
-
+  pageTitle = 'Detalle del Héroe';
+  backLink = '/list';
   constructor(private route: ActivatedRoute, private heroesService: HeroService) { }
 
   ngOnInit(): void {

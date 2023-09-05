@@ -1,6 +1,14 @@
+<app-navbar [pageTitle]="pageTitle" [backLink]="backLink"></app-navbar>
+<br />
+<div class="title">
+  <h1>{{ pageTitle }}</h1>
+</div>
+
 <div class="container">
-  <h2>Listado de Héroes</h2>
   <div class="hero-list">
+    <button class="btn-form" routerLink="/formulario">
+      <i class="fas fa-plus"></i> Héroe
+    </button>
     <div *ngFor="let heroe of heroes" class="hero-card">
       <img [src]="heroe.imagenUrl" alt="Imagen de {{ heroe.nombreHeroe }}" />
       <div class="hero-details">
@@ -8,12 +16,11 @@
         <p><strong>Nombre Real:</strong> {{ heroe.nombreReal }}</p>
         <p><strong>Superpoderes:</strong> {{ heroe.superpoderes }}</p>
         <p><strong>Lugar de Nacimiento:</strong> {{ heroe.lugarNacimiento }}</p>
-        <button (click)="verDetalle(heroe.id)">Ver Detalle</button>
+        <button [routerLink]="['/detail', heroe.id]">Ver Detalle</button>
         <button (click)="eliminarHeroe(heroe.id)">
           Eliminar de la Escuela
         </button>
       </div>
     </div>
   </div>
-  <button routerLink="/formulario">Inscribir Nuevo Héroe</button>
 </div>

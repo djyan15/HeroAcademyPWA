@@ -7,7 +7,7 @@ import { DetailComponent } from './detail/detail.component';
 const routes: Routes = [
   { path: 'list', component: ListComponent },
   { path: 'formulario', component: FormComponent },
-  { path: 'detalle/:id', component: DetailComponent },
+  { path: 'detail/:id', component: DetailComponent },
   { path: '', redirectTo: '/list', pathMatch: 'full' },
 ];
 

@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroModule } from './pages/hero/hero.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { NavbarComponent } from './shared/pages/navbar/navbar.component';
 
 @NgModule({
   declarations: [
