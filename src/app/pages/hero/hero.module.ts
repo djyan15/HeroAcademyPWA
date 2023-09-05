@@ -5,6 +5,7 @@ import { HeroRoutingModule } from './hero-routing.module';
 import { DetailComponent } from './detail/detail.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { ListComponent } from './list/list.component';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     HeroRoutingModule,
   ]
 })
