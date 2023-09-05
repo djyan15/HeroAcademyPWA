@@ -6,13 +6,15 @@ import { DetailComponent } from './detail/detail.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { FormsModule } from '@angular/forms';
+import { NavbarComponent } from 'src/app/shared/pages/navbar/navbar.component';
 
 
 @NgModule({
   declarations: [   
     ListComponent,
     FormComponent,
-    DetailComponent
+    DetailComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,
